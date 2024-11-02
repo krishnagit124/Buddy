@@ -50,6 +50,11 @@ on:
         description: 'Instance_Name'
         required: true
         type: string
+        options:
+        - naveen
+        - Hima
+        - ATP
+        - Uk
 
       WAR:
         description: 'Upgrade New Version'
