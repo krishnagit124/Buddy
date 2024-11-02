@@ -69,6 +69,26 @@ on:
           - jdk-17.0.8+8
           - jdk-11.0.11+9
 
+      Batsman:
+        description: 'Batsman Name'
+        required: true
+        type: choice
+        options:
+        - Veeru
+        - Jaddu
+        - Kohli
+        - Dhoni
+
+     Bowlers:
+        description: 'Bowler Name'
+        required: false
+        type: string
+        type: choice
+        options:
+        - Bujji
+        - gajji
+        - cheddi
+
 run-name: 'Upgrade Instance: ${{ inputs.ENVIROMENT_NAME }} ${{ inputs.INSTANCE_NAME }}'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
