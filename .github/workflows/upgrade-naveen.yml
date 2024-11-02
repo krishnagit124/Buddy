@@ -1,8 +1,4 @@
-# This is a basic workflow to help you get started with Actions
-
-name: Upgrade-naveen
-
-# Controls when the workflow will run
+name: "Upgrade Instance"
 on:
   workflow_dispatch:
     inputs:
@@ -42,12 +38,7 @@ on:
       INSTANCE_NAME:
         description: 'Instance_Name'
         required: true
-        type: choice
-        options:
-        - naveen
-        - Hima
-        - ATP
-        - Uk
+        type: string
 
       WAR:
         description: 'Upgrade New Version'
@@ -62,24 +53,13 @@ on:
           - jdk-17.0.8+8
           - jdk-11.0.11+9
 
-      Batsman:
-        description: 'Batsman Name'
+      Batsmen:
+        description: 'Batsmen Name'
         required: true
         type: choice
         options:
           - Veeru
-          - Jaddu
-          - Kohli
-          - Dhoni
-
-     Bowlers:
-        description: 'Bowler Name'
-        required: false
-        type: choice
-        options:
-          - Bujji
-          - gajji
-          - cheddi
+          - Jaddu     
 
 run-name: 'Upgrade Instance: ${{ inputs.ENVIROMENT_NAME }} ${{ inputs.INSTANCE_NAME }}'
 
