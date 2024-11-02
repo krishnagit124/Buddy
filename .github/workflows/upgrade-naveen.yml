@@ -67,19 +67,19 @@ on:
         required: true
         type: choice
         options:
-        - Veeru
-        - Jaddu
-        - Kohli
-        - Dhoni
+          - Veeru
+          - Jaddu
+          - Kohli
+          - Dhoni
 
      Bowlers:
         description: 'Bowler Name'
         required: false
         type: choice
         options:
-        - Bujji
-        - gajji
-        - cheddi
+          - Bujji
+          - gajji
+          - cheddi
 
 run-name: 'Upgrade Instance: ${{ inputs.ENVIROMENT_NAME }} ${{ inputs.INSTANCE_NAME }}'
 
