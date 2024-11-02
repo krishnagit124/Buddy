@@ -38,7 +38,11 @@ on:
       INSTANCE_NAME:
         description: 'Instance_Name'
         required: true
-        type: string
+        type: choice
+        options:
+          - Naveen
+          - Hima
+          - Other
 
       WAR:
         description: 'Upgrade New Version'
