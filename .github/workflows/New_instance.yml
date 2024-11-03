@@ -16,6 +16,14 @@ on:
           - Mar
           - Atp
           - UK
+       Location:
+         description: location_Name
+         required: true
+         type: choice
+         options:
+           - tank_road
+           - temple
+           - kuruva
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
