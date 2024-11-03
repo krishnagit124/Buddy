@@ -16,7 +16,7 @@ on:
           - Mar
           - Atp
           - UK
-       Location:
+        Location:
          description: location_Name
          required: true
          type: choice
